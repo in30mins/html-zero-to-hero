@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML</title>
+    <link rel="shortcut icon" href="./images/images.jfif" type="image/x-icon" />
+    <style>
+      #one {
+        font-family: 'Courier New', Courier, monospace;
+      }
+      table,
+      th,
+      td {
+        border: 1px solid black;
+      }
+    </style>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!--Headings-->
+    <h1>Hello world</h1>
+    <h2>Hello World</h2>
+    <h3>Hello World</h3>
+    <h4>Hello World</h4>
+    <h5>Hello World</h5>
+    <h6>Hello World</h6>
+
+    <!-- Paragraph -->
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae pariatur
+      perferendis commodi consectetur iste facere alias expedita totam incidunt
+      modi.
+    </p>
+    <p style="background-color: gray; color: aquamarine; border: 3px">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus, libero?
+    </p>
+    <hr />
+    <hr />
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br />
+      Fugit vel distinctio cum harum asperiores ipsam, reprehenderit maxime in
+      rerum error.
+    </p>
+    <pre>
+        Hello this is bult
+        into the sky
+    </pre>
+
+    <!-- Formatting 
+     
+        <b> - Bold text
+        <strong> - Important text
+        <i> - Italic text
+        <em> - Emphasized text
+        <small> - Smaller text
+        <mark> - Marked text
+        <del> - Deleted text
+        <ins> - Inserted text
+        <sub> - Subscript text
+        <sup> - Superscript text
+
+    -->
+
+    <p>
+      Lorem ipsum, <b>dolor</b> sit <strong>amet</strong>
+      <i>consectetur</i> adipisicing elit. Temporibus libero beatae neque
+      corporis accusantium eligendi consequuntur labore consectetur eum omnis.
+    </p>
+    <p>2<sub>3</sub>the sentance<del>3</del><ins>5</ins></p>
+    <p>2<sup>9</sup> <mark>54</mark></p>
+
+    <!-- Quotation
+
+        <blockquote>,
+        <q>,
+        <abbr>, 
+        <address>, 
+        <cite>, and
+         <bdo> 
+    -->
+
+    <p>Here is a quote from WWF's website:</p>
+    <blockquote cite="http://www.worldwildlife.org/who/index.html">
+      For 60 years, WWF has worked to help people and nature thrive. As the
+      world's leading conservation organization, WWF works in nearly 100
+      countries. At every level, we collaborate with people around the world to
+      develop and deliver innovative solutions that protect communities,
+      wildlife, and the places in which they live.
+    </blockquote>
+    <p>
+      WWF's goal is to:
+      <q>Build a future where people live in harmony with nature.</q>
+    </p>
+    <p>
+      The <abbr title="World Health Organization">WHO</abbr> was founded in
+      1948.
+    </p>
+
+    <address>
+      Written by John Doe.<br />
+      Visit us at:<br />
+      Example.com<br />
+      Box 564, Disneyland<br />
+      USA
+    </address>
+    <p><cite>The Scream</cite> by Edvard Munch. Painted in 1893.</p>
+    <bdo dir="rtl">This text will be written from right to left</bdo>
+    <hr />
+    <marquee behavior="" direction="rtl"> Hello</marquee>
+    <hr />
+    <!-- css -->
+    <p style="background-color: rgb(234, 123, 25)">Inline css</p>
+    <p id="one">Internal Style</p>
+    <p id="ex">External Styleesheet</p>
+
+    <!-- Links -->
+    <a href="https://www.w3schools.com/html/html_css.asp">HTML</a><br />
+    <a href="https://www.w3schools.com/css/default.asp">CSS</a><br />
+
+    <!-- Image -->
+    <img src="./images/bg1.jfif" alt="image" />
+
+    <!-- Table -->
+    <table>
+      <caption>
+        Main Table
+      </caption>
+      <thead>
+        <tr>
+          <th>no</th>
+          <th>name</th>
+          <th>city</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1.</td>
+          <td>Raju</td>
+          <td>Hyderabad</td>
+        </tr>
+        <tr>
+          <td>2.</td>
+          <td>Harsha</td>
+          <td>Hyderabad</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        Thank you
+      </tfoot>
+    </table>
+
+    <!--List -->
+    <ul type="circle">
+      <li>1</li>
+      <li>2</li>
+      <li>3</li>
+      <li>4</li>
+    </ul>
+    <ol type="i">
+      <li>1</li>
+      <li>2</li>
+      <li>3</li>
+      <li>4</li>
+    </ol>
+    <dl>
+      <dt>HTML</dt>
+      <dd>Hyper Text Markup Language</dd>
+    </dl>
+
+    <!-- Iframe -->
+    <iframe src="demo_iframe.htm" width="300" height="400"></iframe>
+    <p id="demo"></p>
+
+    <script>
+      document.getElementById('demo').innerHTML = 'Hello JavaScript!'
+    </script>
+
+    <!-- Forms -->
+    <form>
+      <label for="fname">First name:</label><br />
+      <input type="text" id="fname" name="fname" /><br />
+      <label for="lname">Last name:</label><br />
+      <input type="text" id="lname" name="lname" />
+    </form>
+  </body>
+</html>

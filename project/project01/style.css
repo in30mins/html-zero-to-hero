@@ -1,0 +1,50 @@
+:root {
+  --bg: #f8f8f8;
+}
+body {
+  background: var(--bg);
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+.gallery {
+  display: flex;
+  gap: 1rem;
+  max-width: 80rem;
+}
+.card {
+  position: relative;
+  left: 0;
+  width: 4rem;
+  border-radius: 1.2rem;
+  height: 20rem;
+  overflow: hidden;
+  cursor: pointer;
+  background: var(--bg);
+  transition: 0.4s ease-in-out;
+  box-shadow: 0 5px 12px #0000004d;
+  flex: 0.25;
+}
+.card img {
+  position: relative;
+  height: 20rem;
+  object-fit: cover;
+}
+.card:hover {
+  flex: 2;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 1rem;
+}
+.card:nth-child(1) img {
+  left: -8rem;
+}
+.card:nth-child(2) img {
+  left: -6rem;
+}
+.card:nth-child(3) img {
+  left: -14rem;
+}
+.card:nth-child(4) img {
+  left: -8rem;
+}
